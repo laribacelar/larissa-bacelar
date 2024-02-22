@@ -3,3 +3,6 @@ html {
   font-family: "Dancing Script", cursive;
   font-family: "Inter", sans-serif;
 }
+.rounded-full {
+  object-fit: cover;
+}
