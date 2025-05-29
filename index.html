@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <title>Larissa Bacelar</title>
     <link rel="stylesheet" href="assets/main.css" />
+    <title>Larissa Bacelar</title>
+    
     <style>
       html {
         scroll-behavior: smooth;
       }
     </style>
   </head>
-  <body class="bg-pink-50 max-w-6xl mx-auto">
+  <body class="bg-#fffef5 max-w-6xl mx-auto">
     <!-- Menu Mobile -->
     <section
       id="menu"
@@ -54,22 +55,21 @@
     <main class="p-8">
       <!-- Banner -->
       <section
-        class="banner-top flex flex-col-reverse md:flex-row justify-between"
+        class="banner-top flex flex-col-reverse md:flex-row justify-between mb-10"
       >
         <div class="flex flex-col-reverse justify-center md:w-2/3">
           <section
             class="flex flex-row justify-center w-full mt-10 md:justify-start"
           >
             <a
-              href="assets/Larissa Bacelar (3).pdf"
+              href="assets/LARI-BACELAR.pdf"
               class="download-cv px-10 bg-pink-800 text-pink-100 rounded-lg py-3 h-12"
             >
               Download CV
             </a>
           </section>
           <section class="text-base font-normal mt-4 md:text-xl md:pr-60">
-            Desenvolvedora front-end | Cursando Engenharia de Software |
-            Entusiasmada em construir interfaces web atraentes e funcionais.
+            Desenvolvedora Front-End | HTML, CSS, JavaScript, React, Node | UI Responsiva
           </section>
           <section
             class="flex flex-col text-banner text-center md:text-left font-semibold text-3xl md:text-5xl md:pr-32 mt-9 md:mt-0"
@@ -85,9 +85,35 @@
           />
         </section>
       </section>
+      <div
+        class="flex flex-col items-center justify-center p-8 rounded-md bg-pink-50"
+      >
+        <section class="text-3xl font-bold text-center text-pink-900 mb-10">
+          Apresentação
+        </section>
+        <section
+          class="max-w-4xl text-base text-justify font-normal mt-4 md:text-xl"
+        >
+          <p>
+            Sou desenvolvedora front-end com experiência na criação de
+            interfaces modernas, responsivas e focadas na experiência do
+            usuário. Utilizo tecnologias como HTML, CSS e JavaScript em meus
+            projetos, sempre buscando soluções limpas, acessíveis e funcionais.
+            Ao longo da minha trajetória, desenvolvi projetos próprios como o
+            <strong class="text-pink-900">Cozinhando com a Lari</strong> e o <strong class="text-pink-900">Desafio Starbucks</strong>, que você pode conferir
+            aqui no meu portfólio. Também venho aprimorando minhas habilidades
+            com React, Node.js e boas práticas de desenvolvimento, como controle
+            de versão com Git e design responsivo. Antes da tecnologia, atuei
+            com atendimento ao cliente, o que me trouxe uma escuta ativa e
+            empatia, qualidades que levo comigo em cada decisão de interface e
+            interação. Estou sempre em busca de novos desafios e oportunidades
+            para evoluir como desenvolvedora.
+          </strong>
+        </section>
+      </div>
 
       <!-- Certificados -->
-      <section id="certificados" class="pt-16 px-4 bg-pink-50">
+      <section id="certificados" class="pt-16 px-4">
         <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
           Certificados
         </h2>
@@ -129,46 +155,137 @@
               class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
             />
           </a>
+          <a href="assets/certificado-imersao-dev.png" target="_blank">
+            <img
+              src="assets/certificado-imersao-dev.png"
+              alt="Certificado ImersãoDEV"
+              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
+            />
+          </a>
+          <a href="assets/certificado-devclub.png" target="_blank">
+            <img
+              src="assets/certificado-devclub.png"
+              alt="Certificado DevClub"
+              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
+            />
+          </a>
         </div>
       </section>
 
       <!-- Trabalhos -->
-      <section id="trabalhos" class="pt-10">
+      <section id="trabalhos" class="pt-10 bg-pink-50 rounded-lg mb-10 mt-10 p-8">
         <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
           Trabalhos
         </h2>
         <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
           <img
-            src="assets/portfolio.jpeg"
-            alt="Projeto 1"
-            class="w-full md:w-96"
+            src="assets/Dólar.png"
+            alt="Projeto Conversão"
+            class="w-full md:w-96 rounded-lg"
           />
           <div class="flex-col md:flex-row">
-            <div class="mt-6 font-semibold text-lg">Designing Dashboards</div>
+            <div class="mt-6 font-semibold text-lg">Convert Money</div>
             <div class="flex gap-4 py-4 items-center">
               <div
                 class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
               >
-                2023
+                2025
               </div>
               <div>Front-End</div>
             </div>
             <div>
-              Esse é meu primeiro trabalho, meus desafios foram principalmente
-              na parte do jQuery. Para colocar o site no ar, modifiquei a cor
-              pois achei que estava muito rosa.
+Projeto desenvolvido como parte do desafio da aula de JavaScript na formação Front End do DevClub.
+Consiste em um conversor de moedas, que transforma valores de Real (BRL) para Dólar (USD), Euro (EUR), Libra (GBP) e Bitcoin (BTC).
+
+A principal complexidade foi implementar, com JavaScript, a troca dinâmica dos nomes e das imagens das moedas conforme a seleção do usuário. O desafio foi ótimo para reforçar conceitos de manipulação do DOM, eventos e lógica condicional.
+
+Tecnologias utilizadas:
+🔹 HTML
+🔹 CSS
+🔹 JavaScript
+            </div>
+          </div>
+        </article>
+        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+          <img
+            src="assets/starbucks.png"
+            alt="Starbucks"
+            class="w-full md:w-96 rounded-lg"
+          />
+          <div class="flex-col md:flex-row">
+            <div class="mt-6 font-semibold text-lg">Starbucks</div>
+            <div class="flex gap-4 py-4 items-center">
+              <div
+                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
+              >
+                2025
+              </div>
+              <div>Front-End</div>
+            </div>
+            <div>
+              Projeto desenvolvido durante o desafio “Programador em 72h” da formação Front End do DevClub, com orientação de Rodolfo Mori.
+Consiste em uma aplicação web construída do zero com foco em estruturação de páginas, estilização responsiva e lógica de programação.
+
+A principal complexidade foi aplicar os conceitos aprendidos de forma prática e integrada, desenvolvendo toda a base do projeto com HTML, CSS e JavaScript. O desafio foi essencial para reforçar conhecimentos em organização de código, responsividade e interatividade com o usuário.
+
+Tecnologias utilizadas:
+🔹 HTML
+🔹 CSS
+🔹 JavaScript
+            </div>
+          </div>
+        </article>
+        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+          <img
+            src="assets/cozinhandocomalari2.png"
+            alt="Cozinhando com a Lari"
+            class="w-full md:w-96 rounded-lg"
+          />
+          <div class="flex-col md:flex-row">
+            <div class="mt-6 font-semibold text-lg">Cozinhando com a Lari</div>
+            <div class="flex gap-4 py-4 items-center">
+              <div
+                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
+              >
+                2025
+              </div>
+              <div>Front-End</div>
+            </div>
+            <div>
+              Projeto desenvolvido do zero como parte dos estudos em desenvolvimento web, com foco na prática e no aprimoramento das habilidades front-end.
+Cada etapa foi planejada para consolidar conhecimentos em estruturação de páginas, estilização responsiva e lógica de programação com JavaScript.
+
+A construção do projeto permitiu fortalecer minha base em HTML, CSS e JavaScript, além de exercitar a organização do código e a interatividade com o usuário.
+
+Tecnologias utilizadas:
+🔹 HTML
+🔹 CSS
+🔹 JavaScript
             </div>
           </div>
         </article>
       </section>
 
       <!-- Contato -->
-      <section id="contato" class="pt-16 px-4 bg-pink-50">
+      <section id="contato" class="pt-16 px-4 pb-10">
         <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
           Contato
         </h2>
-        <p class="text-center text-lg">E-mail: by.laribacelar@gmail.com</p>
-        <p class="text-center text-lg">WhatsApp: 41 9 8455-3094</p>
+<p class="text-lg mb-2 text-center">
+  <a href="mailto:by.laribacelar@gmail.com" class="text-pink-700 font-bold no-underline hover:text-pink-900">
+    by.laribacelar@gmail.com
+  </a>
+</p>        
+<p class="text-center text-lg">
+  <a 
+  href="https://wa.me/5541984553094" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="text-pink-700 font-bold no-underline hover:text-pink-900"
+>
+  WhatsApp
+</a>
+</p>
       </section>
 
       <!-- Footer -->
