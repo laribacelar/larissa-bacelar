@@ -1,372 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/main.css" />
-    <title>Larissa Bacelar</title>
-    
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body class="bg-[#FFFFF0] max-w-6xl mx-auto">
-    <!-- Menu Mobile -->
-    <section
-      id="menu"
-      class="hidden fixed h-full w-full bg-pink-300 flex-col opacity-0 z-50"
-    >
-      <div class="pr-6 mt-4 text-right cursor-pointer" id="btn-close">
-        Close
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/main.css" />
+  <title>Larissa Bacelar</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFFFF0] max-w-6xl mx-auto">
+  <!-- Menu Mobile -->
+  <section id="menu" class="hidden fixed h-full w-full bg-pink-300 flex-col opacity-0 z-50">
+    <div class="pr-6 mt-4 text-right cursor-pointer" id="btn-close">
+      Close
+    </div>
+    <ul class="mt-32 text-5xl font-bold flex flex-col gap-10 items-center w-full justify-center">
+      <li><a href="#trabalhos" class="menu-link">Trabalhos</a></li>
+      <li><a href="#certificados" class="menu-link">Certificados</a></li>
+      <li><a href="#contato" class="menu-link">Contato</a></li>
+    </ul>
+  </section>
+
+  <!-- Header -->
+  <header>
+    <nav class="flex flex-col">
+      <section id="nav-desktop" class="hidden md:flex">
+        <button class="nav-button"></button>
+        <button class="nav-button"></button>
+        <button class="nav-button"></button>
+      </section>
+      <section id="nav-mobile" class="p-2 h-12 flex justify-end md:hidden bg-pink-300">
+        <button id="btn-menu" class="nav-button">
+          <img src="assets/Menu.svg" alt="Menu" />
+        </button>
+      </section>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-8">
+    <!-- Banner -->
+    <section class="banner-top flex flex-col-reverse md:flex-row justify-between mb-10">
+      <div class="flex flex-col-reverse justify-center md:w-2/3">
+        <section class="flex flex-row justify-center w-full mt-10 md:justify-start">
+          <a href="assets/LARI-BACELAR.pdf"
+            class="download-cv px-10 bg-pink-800 text-pink-100 hover:scale-105 rounded-lg py-3 h-12">
+            Download CV
+          </a>
+        </section>
+        <section class="text-base font-normal mt-4 md:text-xl md:pr-60">
+          Desenvolvedora Front-End | HTML, CSS, JavaScript, React, Node | UI Responsiva
+        </section>
+        <section
+          class="flex flex-col text-banner text-center md:text-left font-semibold text-3xl md:text-5xl md:pr-32 mt-9 md:mt-0">
+          Larissa R. B. Santos
+        </section>
       </div>
-      <ul
-        class="mt-32 text-5xl font-bold flex flex-col gap-10 items-center w-full justify-center"
-      >
-        <li><a href="#trabalhos" class="menu-link">Trabalhos</a></li>
-        <li><a href="#certificados" class="menu-link">Certificados</a></li>
-        <li><a href="#contato" class="menu-link">Contato</a></li>
-      </ul>
+      <section class="avatar flex justify-center md:w-1/3">
+        <img class="rounded-full h-52 w-52 md:h-72 md:w-72" src="assets/avatar-2.jpg" alt="Larissa Bacelar" />
+      </section>
+    </section>
+    <div class="flex flex-col items-center justify-center p-8 rounded-md bg-pink-50">
+      <section class="text-3xl font-bold text-center text-pink-900 mb-10">
+        Apresentação
+      </section>
+      <section class="max-w-4xl text-base text-justify font-normal mt-4 md:text-xl">
+        <p>
+          Sou desenvolvedora front-end com experiência na criação de
+          interfaces modernas, responsivas e focadas na experiência do
+          usuário. Utilizo tecnologias como HTML, CSS e JavaScript em meus
+          projetos, sempre buscando soluções limpas, acessíveis e funcionais.
+          Ao longo da minha trajetória, desenvolvi projetos próprios como o
+          <strong class="text-pink-900">Cozinhando com a Lari</strong> e o <strong class="text-pink-900">Desafio
+            Starbucks</strong>, que você pode conferir
+          aqui no meu portfólio. Também venho aprimorando minhas habilidades
+          com React, Node.js e boas práticas de desenvolvimento, como controle
+          de versão com Git e design responsivo. Antes da tecnologia, atuei
+          com atendimento ao cliente, o que me trouxe uma escuta ativa e
+          empatia, qualidades que levo comigo em cada decisão de interface e
+          interação. Estou sempre em busca de novos desafios e oportunidades
+          para evoluir como desenvolvedora.
+          </strong>
+      </section>
+    </div>
+
+    <!-- Certificados -->
+    <section id="certificados" class="pt-16 px-4">
+      <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
+        Certificados
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <a href="assets/certificado-HTML-P1.svg" target="_blank">
+          <img src="assets/certificado-HTML-P1.svg" alt="Certificado HTML e CSS - Alura"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado-HTML-P2.svg" target="_blank">
+          <img src="assets/certificado-HTML-P2.svg" alt="Certificado Tailwind"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado-HTML-P3.svg" target="_blank">
+          <img src="assets/certificado-HTML-P3.svg" alt="Certificado jQuery"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado-JS.svg" target="_blank">
+          <img src="assets/certificado-JS.svg" alt="Certificado JavaScript"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado.svg" target="_blank">
+          <img src="assets/certificado.svg" alt="Certificado JavaScript"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado-imersao-dev.png" target="_blank">
+          <img src="assets/certificado-imersao-dev.png" alt="Certificado ImersãoDEV"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+        <a href="assets/certificado-devclub.png" target="_blank">
+          <img src="assets/certificado-devclub.png" alt="Certificado DevClub"
+            class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2" />
+        </a>
+      </div>
     </section>
 
-    <!-- Header -->
-    <header>
-      <nav class="flex flex-col">
-        <section id="nav-desktop" class="hidden md:flex">
-          <button class="nav-button"></button>
-          <button class="nav-button"></button>
-          <button class="nav-button"></button>
-        </section>
-        <section
-          id="nav-mobile"
-          class="p-2 h-12 flex justify-end md:hidden bg-pink-300"
-        >
-          <button id="btn-menu" class="nav-button">
-            <img src="assets/Menu.svg" alt="Menu" />
-          </button>
-        </section>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main class="p-8">
-      <!-- Banner -->
-      <section
-        class="banner-top flex flex-col-reverse md:flex-row justify-between mb-10"
-      >
-        <div class="flex flex-col-reverse justify-center md:w-2/3">
-          <section
-            class="flex flex-row justify-center w-full mt-10 md:justify-start"
-          >
-            <a
-              href="assets/LARI-BACELAR.pdf"
-              class="download-cv px-10 bg-pink-800 text-pink-100 hover:scale-105 rounded-lg py-3 h-12"
-            >
-              Download CV
-            </a>
-          </section>
-          <section class="text-base font-normal mt-4 md:text-xl md:pr-60">
-            Desenvolvedora Front-End | HTML, CSS, JavaScript, React, Node | UI Responsiva
-          </section>
-          <section
-            class="flex flex-col text-banner text-center md:text-left font-semibold text-3xl md:text-5xl md:pr-32 mt-9 md:mt-0"
-          >
-            Larissa R. B. Santos
-          </section>
-        </div>
-        <section class="avatar flex justify-center md:w-1/3">
-          <img
-            class="rounded-full h-52 w-52 md:h-72 md:w-72"
-            src="assets/avatar-2.jpg"
-            alt="Larissa Bacelar"
-          />
-        </section>
-      </section>
-      <div
-        class="flex flex-col items-center justify-center p-8 rounded-md bg-pink-50"
-      >
-        <section class="text-3xl font-bold text-center text-pink-900 mb-10">
-          Apresentação
-        </section>
-        <section
-          class="max-w-4xl text-base text-justify font-normal mt-4 md:text-xl"
-        >
-          <p>
-            Sou desenvolvedora front-end com experiência na criação de
-            interfaces modernas, responsivas e focadas na experiência do
-            usuário. Utilizo tecnologias como HTML, CSS e JavaScript em meus
-            projetos, sempre buscando soluções limpas, acessíveis e funcionais.
-            Ao longo da minha trajetória, desenvolvi projetos próprios como o
-            <strong class="text-pink-900">Cozinhando com a Lari</strong> e o <strong class="text-pink-900">Desafio Starbucks</strong>, que você pode conferir
-            aqui no meu portfólio. Também venho aprimorando minhas habilidades
-            com React, Node.js e boas práticas de desenvolvimento, como controle
-            de versão com Git e design responsivo. Antes da tecnologia, atuei
-            com atendimento ao cliente, o que me trouxe uma escuta ativa e
-            empatia, qualidades que levo comigo em cada decisão de interface e
-            interação. Estou sempre em busca de novos desafios e oportunidades
-            para evoluir como desenvolvedora.
-          </strong>
-        </section>
-      </div>
-
-      <!-- Certificados -->
-      <section id="certificados" class="pt-16 px-4">
-        <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
-          Certificados
-        </h2>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
-        >
-          <a href="assets/certificado-HTML-P1.svg" target="_blank">
-            <img
-              src="assets/certificado-HTML-P1.svg"
-              alt="Certificado HTML e CSS - Alura"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado-HTML-P2.svg" target="_blank">
-            <img
-              src="assets/certificado-HTML-P2.svg"
-              alt="Certificado Tailwind"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado-HTML-P3.svg" target="_blank">
-            <img
-              src="assets/certificado-HTML-P3.svg"
-              alt="Certificado jQuery"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado-JS.svg" target="_blank">
-            <img
-              src="assets/certificado-JS.svg"
-              alt="Certificado JavaScript"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado.svg" target="_blank">
-            <img
-              src="assets/certificado.svg"
-              alt="Certificado JavaScript"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado-imersao-dev.png" target="_blank">
-            <img
-              src="assets/certificado-imersao-dev.png"
-              alt="Certificado ImersãoDEV"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-          <a href="assets/certificado-devclub.png" target="_blank">
-            <img
-              src="assets/certificado-devclub.png"
-              alt="Certificado DevClub"
-              class="w-full aspect-video object-contain rounded-lg shadow-md hover:scale-105 transition-transform duration-300 border border-pink-300 bg-white p-2"
-            />
-          </a>
-        </div>
-      </section>
-
-      <!-- Trabalhos -->
-      <section id="trabalhos" class="pt-10 bg-pink-50 rounded-lg mb-10 mt-10 p-8">
-        <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
-          Trabalhos
-        </h2>
-        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
-          <video
-            src="./assets/jsb-personal-trainer.mp4"
-            alt="Projeto Conversão"
-            class="w-full md:w-96 rounded-lg"
-            controls
-            controlsList="nodownload"
-            autoplay
-            muted
-          ></video>
-          <div class="flex-col md:flex-row">
-            <div class="mt-6 font-semibold text-lg">JSB Personal Trainer</div>
-            <div class="flex gap-4 py-4 items-center">
-              <div
-                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
-              >
-                2025
-              </div>
-              <div>Front-End</div>
+    <!-- Trabalhos -->
+    <section id="trabalhos" class="pt-10 bg-pink-50 rounded-lg mb-10 mt-10 p-8">
+      <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
+        Trabalhos
+      </h2>
+      <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+        <video src="./assets/jsb-personal-trainer.mp4" alt="Projeto Conversão" class="w-full md:w-96 rounded-lg"
+          controls controlsList="nodownload" autoplay muted></video>
+        <div class="flex-col md:flex-row">
+          <div class="mt-6 font-semibold text-lg">JSB Personal Trainer</div>
+          <div class="flex gap-4 py-4 items-center">
+            <div class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs">
+              2025
             </div>
-            <div>
-              <p>Projeto desenvolvido de forma independente com o objetivo de apresentar os serviços do personal trainer JSB de maneira profissional e impactante.</p>
-              <p>O site foi criado do zero utilizando HTML, CSS e JavaScript, com foco em estruturação clara, visual moderno e boa experiência do usuário. A proposta foi traduzir a identidade da marca em uma interface que transmitisse confiança, motivação e profissionalismo.</p>
-              <p>Este projeto reforçou minha capacidade de aplicar fundamentos da web na criação de soluções visuais eficazes, alinhadas às necessidades do cliente e do público-alvo</p>  
-              <ul>
-                <h2>Tecnologias utilizadas:</h2>
-                <li>🔹 HTML</li>
-                <li>🔹 CSS</li>
-                <li>🔹 JavaScript</li>
-              </ul>
-            </div>
+            <div>Front-End</div>
           </div>
-        </article>
-        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
-          <video
-            src="./assets/convert-money.mp4"
-            alt="Projeto Conversão"
-            class="w-full md:w-96 rounded-lg"
-            controls
-            controlsList="nodownload"
-            autoplay
-            muted
-          ></video>
-          <div class="flex-col md:flex-row">
-            <div class="mt-6 font-semibold text-lg">Convert Money</div>
-            <div class="flex gap-4 py-4 items-center">
-              <div
-                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
-              >
-                2025
-              </div>
-              <div>Front-End</div>
-            </div>
-            <div>
-              <p>Projeto desenvolvido como parte do desafio da aula de JavaScript na formação Front End do DevClub.</p>
-              <p>Consiste em um conversor de moedas, que transforma valores de Real (BRL) para Dólar (USD), Euro (EUR), Libra (GBP) e Bitcoin (BTC).</p>
-              <p>A principal complexidade foi implementar, com JavaScript, a troca dinâmica dos nomes e das imagens das moedas conforme a seleção do usuário. O desafio foi ótimo para reforçar conceitos de manipulação do DOM, eventos e lógica condicional.</p>
-                <ul>
-                <h2>Tecnologias utilizadas:</h2>
-                <li>🔹 HTML</li>
-                <li>🔹 CSS</li>
-                <li>🔹 JavaScript</li>
+          <div>
+            <p>Projeto desenvolvido de forma independente com o objetivo de apresentar os serviços do personal trainer
+              JSB de maneira profissional e impactante.</p>
+            <p>O site foi criado do zero utilizando HTML, CSS e JavaScript, com foco em estruturação clara, visual
+              moderno e boa experiência do usuário. A proposta foi traduzir a identidade da marca em uma interface que
+              transmitisse confiança, motivação e profissionalismo.</p>
+            <p>Este projeto reforçou minha capacidade de aplicar fundamentos da web na criação de soluções visuais
+              eficazes, alinhadas às necessidades do cliente e do público-alvo</p>
+            <ul>
+              <h2>Tecnologias utilizadas:</h2>
+              <li>🔹 HTML</li>
+              <li>🔹 CSS</li>
+              <li>🔹 JavaScript</li>
             </ul>
+            <a href="https://jsbpersonaltrainer.onrender.com/" target="_blank" rel="JSB Personal Trainer"
+              class="inline-block mt-4 px-6 py-3 bg-pink-800 text-white px-4 py-1 rounded-full text-xs font-medium rounded-xl shadow-md hover:bg-pink-900 hover:-translate-y-1 transition-transform duration-200">
+              Acessar o site
+            </a>
+
           </div>
         </div>
-        </article>
-        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
-           <video
-            src="./assets/starbucks.mp4"
-            alt="Projeto Conversão"
-            class="w-full md:w-96 rounded-lg"
-            controls
-            controlsList="nodownload"
-            autoplay
-            muted
-          ></video>
-          <div class="flex-col md:flex-row">
-            <div class="mt-6 font-semibold text-lg">Starbucks</div>
-            <div class="flex gap-4 py-4 items-center">
-              <div
-                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
-              >
-                2025
-              </div>
-              <div>Front-End</div>
+      </article>
+      <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+        <video src="./assets/convert-money.mp4" alt="Projeto Conversão" class="w-full md:w-96 rounded-lg" controls
+          controlsList="nodownload" autoplay muted></video>
+        <div class="flex-col md:flex-row">
+          <div class="mt-6 font-semibold text-lg">Convert Money</div>
+          <div class="flex gap-4 py-4 items-center">
+            <div class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs">
+              2025
             </div>
-            <div>
-              <p>Projeto desenvolvido durante o desafio “Programador em 72h” da formação Front End do DevClub, com orientação de Rodolfo Mori.</p>
-              <p>Consiste em uma aplicação web construída do zero com foco em estruturação de páginas, estilização responsiva e lógica de programação.</p>
-              <p>A principal complexidade foi aplicar os conceitos aprendidos de forma prática e integrada, desenvolvendo toda a base do projeto com HTML, CSS e JavaScript. O desafio foi essencial para reforçar conhecimentos em organização de código, responsividade e interatividade com o usuário.</p>
-                <ul>
-                <h2>Tecnologias utilizadas:</h2>
-                <li>🔹 HTML</li>
-                <li>🔹 CSS</li>
-                <li>🔹 JavaScript</li>
+            <div>Front-End</div>
+          </div>
+          <div>
+            <p>Projeto desenvolvido como parte do desafio da aula de JavaScript na formação Front End do DevClub.</p>
+            <p>Consiste em um conversor de moedas, que transforma valores de Real (BRL) para Dólar (USD), Euro (EUR),
+              Libra (GBP) e Bitcoin (BTC).</p>
+            <p>A principal complexidade foi implementar, com JavaScript, a troca dinâmica dos nomes e das imagens das
+              moedas conforme a seleção do usuário. O desafio foi ótimo para reforçar conceitos de manipulação do DOM,
+              eventos e lógica condicional.</p>
+            <ul>
+              <h2>Tecnologias utilizadas:</h2>
+              <li>🔹 HTML</li>
+              <li>🔹 CSS</li>
+              <li>🔹 JavaScript</li>
             </ul>
+            <a href="https://convert-money.onrender.com/" target="_blank" rel="Convert Money"
+              class="inline-block mt-4 px-6 py-3 bg-pink-800 text-white px-4 py-1 rounded-full text-xs font-medium rounded-xl shadow-md hover:bg-pink-900 hover:-translate-y-1 transition-transform duration-200">
+              Acessar o site
+            </a>
           </div>
-          </div>
-        </article>
-        <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
-           <video
-            src="./assets/cozinhando-com-a-lari.mp4"
-            alt="Projeto Conversão"
-            class="w-full md:w-96 rounded-lg"
-            controls
-            controlsList="nodownload"
-            autoplay
-            muted
-          ></video>
-          <div class="flex-col md:flex-row">
-            <div class="mt-6 font-semibold text-lg">Cozinhando com a Lari</div>
-            <div class="flex gap-4 py-4 items-center">
-              <div
-                class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs"
-              >
-                2025
-              </div>
-              <div>Front-End</div>
+        </div>
+      </article>
+      <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+        <video src="./assets/starbucks.mp4" alt="Projeto Conversão" class="w-full md:w-96 rounded-lg" controls
+          controlsList="nodownload" autoplay muted></video>
+        <div class="flex-col md:flex-row">
+          <div class="mt-6 font-semibold text-lg">Starbucks</div>
+          <div class="flex gap-4 py-4 items-center">
+            <div class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs">
+              2025
             </div>
-            <div>
-              <p>Projeto desenvolvido do zero como parte dos estudos em desenvolvimento web, com foco na prática e no aprimoramento das habilidades front-end.</p>
-              <p>Cada etapa foi planejada para consolidar conhecimentos em estruturação de páginas, estilização responsiva e lógica de programação com JavaScript.</p>
-              <p>A construção do projeto permitiu fortalecer minha base em HTML, CSS e JavaScript, além de exercitar a organização do código e a interatividade com o usuário.</p>
-              <ul>
-                <h2>Tecnologias utilizadas:</h2>
-                <li>🔹 HTML</li>
-                <li>🔹 CSS</li>
-                <li>🔹 JavaScript</li>
-              </ul>
-             </div>
+            <div>Front-End</div>
           </div>
-        </article>
-      </section>
-
-      <!-- Contato -->
-      <section id="contato" class="pt-16 px-4 pb-10">
-        <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
-          Contato
-        </h2>
-<p class="text-lg mb-2 text-center">
-  <a href="mailto:by.laribacelar@gmail.com" class="text-pink-700 font-bold no-underline hover:text-pink-900">
-    by.laribacelar@gmail.com
-  </a>
-</p>        
-<p class="text-center text-lg">
-  <a 
-  href="https://wa.me/5541984553094" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  class="text-pink-700 font-bold no-underline hover:text-pink-900"
->
-  WhatsApp
-</a>
-</p>
-      </section>
-
-      <!-- Footer -->
-      <footer class="border-t-2 border-pink-800 mt-10">
-        <section class="flex gap-8 justify-center">
-          <!-- Instagram -->
-          <div class="mt-6">
-            <a href="https://www.instagram.com/by.laribacelar/">
-              <img src="assets/insta.svg" alt="Instagram" class="w-6 h-6" />
+          <div>
+            <p>Projeto desenvolvido durante o desafio “Programador em 72h” da formação Front End do DevClub, com
+              orientação de Rodolfo Mori.</p>
+            <p>Consiste em uma aplicação web construída do zero com foco em estruturação de páginas, estilização
+              responsiva e lógica de programação.</p>
+            <p>A principal complexidade foi aplicar os conceitos aprendidos de forma prática e integrada, desenvolvendo
+              toda a base do projeto com HTML, CSS e JavaScript. O desafio foi essencial para reforçar conhecimentos em
+              organização de código, responsividade e interatividade com o usuário.</p>
+            <ul>
+              <h2>Tecnologias utilizadas:</h2>
+              <li>🔹 HTML</li>
+              <li>🔹 CSS</li>
+              <li>🔹 JavaScript</li>
+            </ul>
+            <a href="https://desafiostarbucks.onrender.com/" target="_blank" rel="Starbucks"
+              class="inline-block mt-4 px-6 py-3 bg-pink-800 text-white px-4 py-1 rounded-full text-xs font-medium rounded-xl shadow-md hover:bg-pink-900 hover:-translate-y-1 transition-transform duration-200">
+              Acessar o site
             </a>
           </div>
-
-          <!-- LinkedIn -->
-          <div class="mt-6">
-            <a
-              href="https://www.linkedin.com/in/laribacelar/"
-            >
-              <img src="assets/Linkedin.svg" alt="LinkedIn" class="w-6 h-6" />
+        </div>
+      </article>
+      <article class="card-post mb-6 md:flex md:flex-row md:gap-4">
+        <video src="./assets/cozinhando-com-a-lari.mp4" alt="Projeto Conversão" class="w-full md:w-96 rounded-lg"
+          controls controlsList="nodownload" autoplay muted></video>
+        <div class="flex-col md:flex-row">
+          <div class="mt-6 font-semibold text-lg">Cozinhando com a Lari</div>
+          <div class="flex gap-4 py-4 items-center">
+            <div class="bg-pink-800 text-white px-4 py-1 rounded-full text-xs">
+              2025
+            </div>
+            <div>Front-End</div>
+          </div>
+          <div>
+            <p>Projeto desenvolvido do zero como parte dos estudos em desenvolvimento web, com foco na prática e no
+              aprimoramento das habilidades front-end.</p>
+            <p>Cada etapa foi planejada para consolidar conhecimentos em estruturação de páginas, estilização responsiva
+              e lógica de programação com JavaScript.</p>
+            <p>A construção do projeto permitiu fortalecer minha base em HTML, CSS e JavaScript, além de exercitar a
+              organização do código e a interatividade com o usuário.</p>
+            <ul>
+              <h2>Tecnologias utilizadas:</h2>
+              <li>🔹 HTML</li>
+              <li>🔹 CSS</li>
+              <li>🔹 JavaScript</li>
+            </ul>
+            <a href="https://cozinhandocomalari.onrender.com/" target="_blank" rel="Cozinhando com a Lari"
+              class="inline-block mt-4 px-6 py-3 bg-pink-800 text-white px-4 py-1 rounded-full text-xs font-medium rounded-xl shadow-md hover:bg-pink-900 hover:-translate-y-1 transition-transform duration-200">
+              Acessar o site
             </a>
           </div>
+        </div>
+      </article>
+    </section>
 
-          <!-- GitHub -->
-          <div class="mt-6">
-            <a
-              href="https://github.com/laribacelar?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="w-6 h-6 fill-pink-800"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                aria-label="GitHub"
-              >
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
+    <!-- Contato -->
+    <section id="contato" class="pt-16 px-4 pb-10">
+      <h2 class="text-3xl font-bold text-center text-pink-900 mb-10">
+        Contato
+      </h2>
+      <p class="text-lg mb-2 text-center">
+        <a href="mailto:by.laribacelar@gmail.com" class="text-pink-700 font-bold no-underline hover:text-pink-900">
+          by.laribacelar@gmail.com
+        </a>
+      </p>
+      <p class="text-center text-lg">
+        <a href="https://wa.me/5541984553094" target="_blank" rel="noopener noreferrer"
+          class="text-pink-700 font-bold no-underline hover:text-pink-900">
+          WhatsApp
+        </a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-pink-800 mt-10">
+      <section class="flex gap-8 justify-center">
+        <!-- Instagram -->
+        <div class="mt-6">
+          <a href="https://www.instagram.com/by.laribacelar/">
+            <img src="assets/insta.svg" alt="Instagram" class="w-6 h-6" />
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="mt-6">
+          <a href="https://www.linkedin.com/in/laribacelar/">
+            <img src="assets/Linkedin.svg" alt="LinkedIn" class="w-6 h-6" />
+          </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="mt-6">
+          <a href="https://github.com/laribacelar?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <svg class="w-6 h-6 fill-pink-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              aria-label="GitHub">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
                 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
                 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.084-.729.084-.729 
                 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 
@@ -377,35 +314,35 @@
                 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 
                 5.92.435.375.81 1.096.81 2.215 0 1.6-.015 2.89-.015 
                 3.285 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 
-                12.297c0-6.627-5.373-12-12-12"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
+                12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </section>
 
-        <section class="text-center mt-6 text-xs text-pink-950">
-          Copyright ©2023 All rights reserved
-        </section>
-      </footer>
+      <section class="text-center mt-6 text-xs text-pink-950">
+        Copyright ©2023 All rights reserved
+      </section>
+    </footer>
 
-      <script>
-        $(document).ready(function () {
-          $("#btn-menu").click(function () {
-            $("#menu")
-              .removeClass("hidden")
-              .removeClass("opacity-0")
-              .addClass("opacity-100");
-          });
-
-          $("#btn-close, .menu-link").click(function () {
-            $("#menu").addClass("opacity-0");
-            setTimeout(function () {
-              $("#menu").addClass("hidden").removeClass("opacity-100");
-            }, 300); // espera a transição terminar
-          });
+    <script>
+      $(document).ready(function () {
+        $("#btn-menu").click(function () {
+          $("#menu")
+            .removeClass("hidden")
+            .removeClass("opacity-0")
+            .addClass("opacity-100");
         });
-      </script>
-    </main>
-  </body>
+
+        $("#btn-close, .menu-link").click(function () {
+          $("#menu").addClass("opacity-0");
+          setTimeout(function () {
+            $("#menu").addClass("hidden").removeClass("opacity-100");
+          }, 300); // espera a transição terminar
+        });
+      });
+    </script>
+  </main>
+</body>
+
 </html>
